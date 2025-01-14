@@ -28,10 +28,20 @@ header nav {
 header nav a {
     display: flex;
     align-items: center;
+    color: var(--black);
+    padding-left: 20px;
 }
 
 body {
     background-color: var(--background);
+}
+
+main {
+    width: 1500px;
+    background-color: var(--black);
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 button {
@@ -45,6 +55,8 @@ button {
 
 a {
     color: var(--clickable);
+    font-weight:700;
+    transition: .1s;
     text-decoration: none;
 }
 
@@ -55,6 +67,7 @@ header {
     background-color: var(--clickable);
     margin-bottom: 10px;
     padding: 5px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 footer {
@@ -64,6 +77,7 @@ footer {
     background-color: var(--black);
     margin-top: 10px;
     padding: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 button:hover {
@@ -80,4 +94,12 @@ a:hover {
 
 a:active {
     color: var(--active);
+}
+
+header nav a:hover {
+    color: var(--background)
+}
+
+header nav a:active {
+    color: var(--black)
 }
