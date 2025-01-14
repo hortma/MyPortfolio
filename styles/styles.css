@@ -1,0 +1,83 @@
+:root {
+    --background: rgb(51, 44, 44);
+    --white: rgb(219, 205, 205);
+    --black: rgb(26, 22, 23);
+    --clickable: rgb(255, 72, 72);
+    --hover: rgb(255, 129, 129);
+    --active: rgb(119, 60, 70);
+  }
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: "Kanit", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header p {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: var(--background);
+}
+
+button {
+    font-weight:700;
+    border-radius: 10px;
+    transition: .1s;
+    background-color: var(--clickable);
+    color: var(--black);
+    padding: 5px 30px;
+}
+
+a {
+    color: var(--clickable);
+    text-decoration: none;
+}
+
+header {
+    display:flex;
+    text-align: center;
+    justify-content:space-around;
+    background-color: var(--clickable);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--black);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+button:active {
+    background-color: var(--active);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+a:active {
+    color: var(--active);
+}
